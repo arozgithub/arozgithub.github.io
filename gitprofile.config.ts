@@ -1,5 +1,3 @@
-// gitprofile.config.ts
-
 const CONFIG = {
   github: {
     username: 'arozgithub',
@@ -13,11 +11,11 @@ const CONFIG = {
       mode: 'manual',
       manual: {
         projects: [
-  'arozgithub/automated-sql-generation-openai',
-  'arozgithub/MedFast-main',
-  'arozgithub/Remote-sensing-imaging-U-NET--segmentation',
-],
-
+          'arozgithub/automated-sql-generation-openai',
+          'arozgithub/MedFast-main',
+          'arozgithub/Remote-sensing-imaging-U-NET--segmentation',
+        ],
+      }, // <-- added missing closing brace here
     },
     external: {
       header: 'My Projects',
@@ -154,6 +152,6 @@ const CONFIG = {
   footer: `Made with <a class="text-primary" href="https://github.com/arifszn/gitprofile" target="_blank" rel="noreferrer">GitProfile</a> and ❤️`,
 
   enablePWA: true,
-}
+};
 
 export default CONFIG;
