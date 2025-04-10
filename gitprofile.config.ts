@@ -2,226 +2,144 @@
 
 const CONFIG = {
   github: {
-    username: 'arifszn', // Your GitHub org/user name. (This is the only required config)
+    username: 'arozgithub',
   },
-  /**
-   * If you are deploying to https://<USERNAME>.github.io/, for example your repository is at https://github.com/arifszn/arifszn.github.io, set base to '/'.
-   * If you are deploying to https://<USERNAME>.github.io/<REPO_NAME>/,
-   * for example your repository is at https://github.com/arifszn/portfolio, then set base to '/portfolio/'.
-   */
-  base: '/gitprofile/',
+  base: '/', // change to '/portfolio/' if using subpath
+
   projects: {
     github: {
-      display: true, // Display GitHub projects?
-      header: 'Github Projects',
-      mode: 'automatic', // Mode can be: 'automatic' or 'manual'
-      automatic: {
-        sortBy: 'stars', // Sort projects by 'stars' or 'updated'
-        limit: 8, // How many projects to display.
-        exclude: {
-          forks: false, // Forked projects will not be displayed if set to true.
-          projects: [], // These projects will not be displayed. example: ['arifszn/my-project1', 'arifszn/my-project2']
-        },
-      },
+      display: true,
+      header: 'GitHub Projects',
+      mode: 'manual',
       manual: {
-        // Properties for manually specifying projects
-        projects: ['arifszn/gitprofile', 'arifszn/pandora'], // List of repository names to display. example: ['arifszn/my-project1', 'arifszn/my-project2']
-      },
+        projects: [
+  'arozgithub/automated-sql-generation-openai',
+  'arozgithub/MedFast-main',
+  'arozgithub/Remote-sensing-imaging-U-NET--segmentation',
+],
+
     },
     external: {
       header: 'My Projects',
-      // To hide the `External Projects` section, keep it empty.
       projects: [
         {
-          title: 'Project Name',
-          description:
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc ut.',
-          imageUrl:
-            'https://img.freepik.com/free-vector/illustration-gallery-icon_53876-27002.jpg',
-          link: 'https://example.com',
+          title: 'MedFast AI Tumor Detection & Chatbot',
+          description: 'React-based app with MRI tumor detection using YOLO + RAG + LLMs.',
+          imageUrl: 'https://github.com/arozgithub/arozgithub.github.io/blob/main/Home%20(1).png',
+          link: 'https://github.com/arozgithub/MedFast-main',
         },
         {
-          title: 'Project Name',
-          description:
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc ut.',
-          imageUrl:
-            'https://img.freepik.com/free-vector/illustration-gallery-icon_53876-27002.jpg',
-          link: 'https://example.com',
+          title: 'Automated SQL Generator (OpenAI)',
+          description: 'Converts natural language queries to optimized SQL using OpenAI API.',
+          imageUrl: 'https://github.com/arozgithub/arozgithub.github.io/blob/main/openai.png',
+          link: 'https://github.com/arozgithub/automated-sql-generation-openai',
         },
       ],
     },
   },
+
   seo: {
-    title: 'Portfolio of Ariful Alam',
-    description: '',
+    title: 'Aroz Imran | Data Scientist | AI & Cloud Enthusiast',
+    description: 'Portfolio of Aroz Imran - AI/ML Engineer with expertise in LLMs, CV, NLP, and Cloud.',
     imageURL: '',
   },
+
   social: {
-    linkedin: 'ariful-alam',
-    x: 'arif_szn',
-    mastodon: 'arifszn@mastodon.social',
-    researchGate: '',
-    facebook: '',
-    instagram: '',
-    reddit: '',
-    threads: '',
-    youtube: '', // example: 'pewdiepie'
-    udemy: '',
-    dribbble: '',
-    behance: '',
-    medium: 'arifszn',
-    dev: 'arifszn',
-    stackoverflow: '', // example: '1/jeff-atwood'
-    skype: '',
-    telegram: '',
-    website: 'https://www.arifszn.com',
-    phone: '',
-    email: 'arifulalamszn@gmail.com',
+    linkedin: 'aroz-imran-5828b024b',
+    github: 'arozgithub',
+    email: 'arozimran18@gmail.com',
+    website: '',
   },
+
   resume: {
-    fileUrl:
-      'https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf', // Empty fileUrl will hide the `Download Resume` button.
+    fileUrl: 'https://github.com/arozgithub/arozgithub.github.io/blob/main/Aroz%20Imran.pdf',
   },
+
   skills: [
-    'PHP',
-    'Laravel',
-    'JavaScript',
-    'React.js',
-    'Node.js',
-    'Nest.js',
-    'MySQL',
-    'PostgreSQL',
-    'Git',
-    'Docker',
-    'PHPUnit',
-    'CSS',
-    'Antd',
-    'Tailwind',
+    'Python', 'C++', 'JavaScript', 'React.js', 'MERN', 'LLM', 'Hugging Face', 'AWS Cloud', 'LangChain',
+    'YOLO', 'U-Net', 'Numpy', 'Pandas', 'TensorFlow', 'Sklearn', 'NLTK', 'OpenCV', 'PySpark',
+    'Flask', 'FastAPI', 'Media Pipe', 'Assembly Language'
   ],
+
   experiences: [
     {
-      company: 'Company Name',
-      position: 'Position',
-      from: 'September 2021',
+      company: 'OnyxTec',
+      position: 'Artificial Intelligence Engineer',
+      from: 'Jan 2025',
       to: 'Present',
-      companyLink: 'https://example.com',
+      companyLink: 'https://onyxtec.co/',
     },
     {
-      company: 'Company Name',
-      position: 'Position',
-      from: 'July 2019',
-      to: 'August 2021',
-      companyLink: 'https://example.com',
+      company: 'Virtual Force',
+      position: 'Data Science & ML Intern',
+      from: 'Jun 2024',
+      to: 'Oct 2024',
+      companyLink: 'https://virtualforce.io/',
+    },
+    {
+      company: 'Glowing Soft',
+      position: 'Data Science Intern',
+      from: 'Jun 2023',
+      to: 'Aug 2023',
+      companyLink: 'https://glowingsoft.com/',
     },
   ],
+
   certifications: [
     {
-      name: 'Lorem ipsum',
-      body: 'Lorem ipsum dolor sit amet',
-      year: 'March 2022',
-      link: 'https://example.com',
+      name: 'AWS Academy Cloud Foundations',
+      body: 'Amazon Web Services',
+      year: '2024',
+      link: 'https://www.credly.com/badges/8f4ce0c7-a01d-4db6-add7-2da23f6c9807/linked_in_profile',
+    },
+    {
+      name: 'Data Analytics & BI',
+      body: 'Digiskills',
+      year: '2023',
+      link: '',
     },
   ],
+
   educations: [
     {
-      institution: 'Institution Name',
-      degree: 'Degree',
-      from: '2015',
-      to: '2019',
+      institution: 'NUCES-FAST, Lahore',
+      degree: 'BS in Data Science',
+      from: '2021',
+      to: '2025',
     },
     {
-      institution: 'Institution Name',
-      degree: 'Degree',
-      from: '2012',
-      to: '2014',
+      institution: 'Unique College Lahore',
+      degree: 'F.Sc - Pre Engineering',
+      from: '',
+      to: '',
     },
   ],
-  publications: [
-    {
-      title: 'Publication Title',
-      conferenceName: '',
-      journalName: 'Journal Name',
-      authors: 'John Doe, Jane Smith',
-      link: 'https://example.com',
-      description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
-    },
-    {
-      title: 'Publication Title',
-      conferenceName: 'Conference Name',
-      journalName: '',
-      authors: 'John Doe, Jane Smith',
-      link: 'https://example.com',
-      description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
-    },
-  ],
-  // Display articles from your medium or dev account. (Optional)
+
+  publications: [],
+
   blog: {
-    source: 'dev', // medium | dev
-    username: 'arifszn', // to hide blog section, keep it empty
-    limit: 2, // How many articles to display. Max is 10.
+    source: '', // Add 'dev' or 'medium' and username if you want to show blog posts
+    username: '',
+    limit: 2,
   },
+
   googleAnalytics: {
-    id: '', // GA3 tracking id/GA4 tag id UA-XXXXXXXXX-X | G-XXXXXXXXXX
+    id: '',
   },
-  // Track visitor interaction and behavior. https://www.hotjar.com
+
   hotjar: {
     id: '',
     snippetVersion: 6,
   },
+
   themeConfig: {
     defaultTheme: 'lofi',
-
-    // Hides the switch in the navbar
-    // Useful if you want to support a single color mode
     disableSwitch: false,
-
-    // Should use the prefers-color-scheme media-query,
-    // using user system preferences, instead of the hardcoded defaultTheme
     respectPrefersColorScheme: false,
-
-    // Display the ring in Profile picture
     displayAvatarRing: true,
-
-    // Available themes. To remove any theme, exclude from here.
     themes: [
-      'light',
-      'dark',
-      'cupcake',
-      'bumblebee',
-      'emerald',
-      'corporate',
-      'synthwave',
-      'retro',
-      'cyberpunk',
-      'valentine',
-      'halloween',
-      'garden',
-      'forest',
-      'aqua',
-      'lofi',
-      'pastel',
-      'fantasy',
-      'wireframe',
-      'black',
-      'luxury',
-      'dracula',
-      'cmyk',
-      'autumn',
-      'business',
-      'acid',
-      'lemonade',
-      'night',
-      'coffee',
-      'winter',
-      'dim',
-      'nord',
-      'sunset',
-      'procyon',
+      'light', 'dark', 'lofi', 'dracula', 'cyberpunk', 'sunset', 'nord', 'night', 'winter',
     ],
-
-    // Custom theme, applied to `procyon` theme
     customTheme: {
       primary: '#fc055b',
       secondary: '#219aaf',
@@ -233,12 +151,7 @@ const CONFIG = {
     },
   },
 
-  // Optional Footer. Supports plain text or HTML.
-  footer: `Made with <a 
-      class="text-primary" href="https://github.com/arifszn/gitprofile"
-      target="_blank"
-      rel="noreferrer"
-    >GitProfile</a> and ❤️`,
+  footer: `Made with <a class="text-primary" href="https://github.com/arifszn/gitprofile" target="_blank" rel="noreferrer">GitProfile</a> and ❤️`,
 
   enablePWA: true,
 };
