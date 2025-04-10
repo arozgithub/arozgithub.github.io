@@ -23,13 +23,14 @@ const CONFIG = {
         {
           title: 'MedFast AI Tumor Detection & Chatbot',
           description: 'React-based app with MRI tumor detection using YOLO + RAG + LLMs.',
-          imageUrl: 'https://github.com/arozgithub/arozgithub.github.io/blob/main/Home%20(1).png',
+          imageUrl: 'https://raw.githubusercontent.com/arozgithub/arozgithub.github.io/main/Home%20(1).png
+',
           link: 'https://github.com/arozgithub/MedFast-main',
         },
         {
           title: 'Automated SQL Generator (OpenAI)',
           description: 'Converts natural language queries to optimized SQL using OpenAI API.',
-          imageUrl: 'https://github.com/arozgithub/arozgithub.github.io/blob/main/openai.png',
+          imageUrl: 'https://raw.githubusercontent.com/arozgithub/arozgithub.github.io/main/openai.png',
           link: 'https://github.com/arozgithub/automated-sql-generation-openai',
         },
       ],
@@ -50,7 +51,7 @@ const CONFIG = {
   },
 
   resume: {
-    fileUrl: 'https://github.com/arozgithub/arozgithub.github.io/blob/main/Aroz%20Imran.pdf',
+    fileUrl: 'https://raw.githubusercontent.com/arozgithub/arozgithub.github.io/main/Aroz%20Imran.pdf',
   },
 
   skills: [
