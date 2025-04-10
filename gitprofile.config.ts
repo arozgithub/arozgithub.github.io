@@ -23,8 +23,7 @@ const CONFIG = {
         {
           title: 'MedFast AI Tumor Detection & Chatbot',
           description: 'React-based app with MRI tumor detection using YOLO + RAG + LLMs.',
-          imageUrl: 'https://raw.githubusercontent.com/arozgithub/arozgithub.github.io/main/Home%20(1).png
-',
+          imageUrl: 'https://raw.githubusercontent.com/arozgithub/arozgithub.github.io/main/Home%20(1).png',
           link: 'https://github.com/arozgithub/MedFast-main',
         },
         {
